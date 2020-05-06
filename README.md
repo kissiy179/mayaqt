@@ -1,0 +1,2 @@
+# mayaqt
+MayaでPysideを使いやすくするパッケージ
