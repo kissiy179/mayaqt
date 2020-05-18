@@ -10,7 +10,7 @@ def _requires_from_file(filename):
 
 setup(
     name="mayaqt",
-    version="0.1.0",
+    version="0.2.0",
     license="MIT",
     description=u"MayaでPysideを使いやすくするパッケージ",
     author="satoshi kishimoto",
