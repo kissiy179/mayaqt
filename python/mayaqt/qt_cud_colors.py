@@ -1,7 +1,8 @@
-import cud_colors as cud_colors_
+import cud_colors
 from . import *
 
-accent_colors = [QtGui.QColor(*values) for values in cud_colors_.accent_colors]
-base_colors = [QtGui.QColor(*values) for values in cud_colors_.base_colors]
-achromatic_colors = [QtGui.QColor(*values) for values in cud_colors_.achromatic_colors]
-all_colors = [QtGui.QColor(*values) for values in cud_colors_.all_colors]
+print cud_colors.accent_colors.values()
+accent_colors = [QtGui.QColor(*values) for values in cud_colors.accent_colors.values()]
+base_colors = [QtGui.QColor(*values) for values in cud_colors.base_colors.values()]
+achromatic_colors = [QtGui.QColor(*values) for values in cud_colors.achromatic_colors.values()]
+all_colors = [QtGui.QColor(*values) for values in cud_colors.all_colors.values()]
