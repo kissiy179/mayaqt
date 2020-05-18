@@ -6,7 +6,7 @@ try:
     from shiboken2 import wrapInstance 
 
 except:
-    from shiboken import wrapInstance 
+    from shiboken import wrapInstance
 
 def get_maya_pointer():
     from maya import OpenMayaUI
