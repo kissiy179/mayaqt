@@ -1,6 +1,7 @@
 from qtpy import QtCore, QtGui, QtWidgets
 from maya.app.general.mayaMixin import MayaQWidgetBaseMixin
 from maya.app.general.mayaMixin import MayaQWidgetDockableMixin
+import qt_cud_colors; reload(qt_cud_colors)
 
 try:
     from shiboken2 import wrapInstance 
