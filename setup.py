@@ -1,26 +1,31 @@
-
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import os
+from os.path import dirname, basename, splitext, exists
 from glob import glob
-from os.path import basename
-from os.path import splitext
 from setuptools import setup
-from setuptools import find_packages
 
 def _requires_from_file(filename):
+    '''requirements.txtから必要パッケージを取得'''
+    if not exists(filename):
+        return []
+    
     return open(filename).read().splitlines()
 
+dir_path = dirname(__file__)
+package_name = basename(dir_path)
+module_names = [splitext(basename(path))[0] for path in glob(r'{}\python\*.py'.format(dir_path))]
+requires_packages = _requires_from_file(r'{}\requirements.txt'.format(dir_path))
+
+# セットアップ
 setup(
-    name="mayaqt",
-    version="0.2.0",
-    license="MIT",
-    description=u"MayaでPysideを使いやすくするパッケージ",
-    author="satoshi kishimoto",
-    url="",
-    packages=find_packages("python"),
+    name=package_name,
+    version='0.1.0',
     package_dir={"": "python"},
-    py_modules=[splitext(basename(path))[0] for path in glob('python/*.py')],
+    py_modules=module_names,
     include_package_data=True,
     zip_safe=False,
-    install_requires=_requires_from_file('requirements.txt'),
-    setup_requires=["pytest-runner"],
-    tests_require=["pytest", "pytest-cov"]  
+    python_requires=">=2.7",
+    install_requires=[
+    ]
 )
