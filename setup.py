@@ -15,6 +15,7 @@ setup(
     name='mayaqt',
     version='0.1.0',
     package_dir={"": "python"},
+    packages=find_packages("python"),
     py_modules=[splitext(basename(path))[0] for path in glob('python/*.py')],
     include_package_data=True,
     zip_safe=False,
