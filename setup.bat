@@ -43,7 +43,7 @@ if not %errorlevel%==0 (
 )
 
 REM pipアップデート
-call %MAYAPY_PATH% -m pip install -upgrade pip
+call %MAYAPY_PATH% -m pip install --upgrade pip
 
 REM ------- パッケージインストール -------------------------
 call %MAYAPY_PATH% -m pip install %UPGRADE% -r requirements.txt -t %LIB_PATH% --use-feature=2020-resolver
