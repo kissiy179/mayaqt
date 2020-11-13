@@ -1,4 +1,4 @@
 Qt.py
 qtpy
-qtawesome
+qtawesome == 0.7.1
 cud_colors @ git+https://github.com/kissiy179/cud_colors.git
