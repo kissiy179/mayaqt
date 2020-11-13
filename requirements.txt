@@ -1,3 +1,4 @@
+Qt.py
 qtpy
 qtawesome
 cud_colors @ git+https://github.com/kissiy179/cud_colors.git
