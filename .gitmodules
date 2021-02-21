@@ -1,0 +1,3 @@
+[submodule "utils"]
+	path = utils
+	url = https://github.com/kissiy179/mayapy_package_utilities.git
