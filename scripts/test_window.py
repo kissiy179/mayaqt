@@ -25,6 +25,7 @@ class TestWindow(maya_dockable_mixin, QtWidgets.QWidget):
         self.setWindowTitle('mayaqt test')
         self.setWindowFlags(QtCore.Qt.Window|QtCore.Qt.WindowCloseButtonHint)
         lo = QtWidgets.QVBoxLayout()
+        lo.setContentsMargins(0,0,0,0)
         lo.setSpacing(2)
         self.setLayout(lo)
             
@@ -38,6 +39,6 @@ class TestWindow(maya_dockable_mixin, QtWidgets.QWidget):
             
         lo.addStretch()
 
-def show_test_window():
+def show():
     win = TestWindow(maya_win)
     win.show(dockable=True)
