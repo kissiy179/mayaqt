@@ -2,3 +2,4 @@ Qt.py
 qtpy
 qtawesome == 0.7.1
 cud_colors @ git+https://github.com/kissiy179/cud_colors.git
+maya_reloadable_menu @ git+https://github.com/kissiy179/maya_reloadable_menu.git
