@@ -22,7 +22,7 @@ class TestWindow(maya_dockable_mixin, QtWidgets.QWidget):
     
     def __init__(self, parent=None):
         super(TestWindow, self).__init__(parent)
-        self.setWindowTitle('test_winidow')
+        self.setWindowTitle('test winidow')
         self.setWindowFlags(QtCore.Qt.Window|QtCore.Qt.WindowCloseButtonHint)
         lo = QtWidgets.QVBoxLayout()
         lo.setContentsMargins(2,2,2,2)
