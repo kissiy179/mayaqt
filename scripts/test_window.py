@@ -22,12 +22,13 @@ class TestWindow(maya_dockable_mixin, QtWidgets.QWidget):
     
     def __init__(self, parent=None):
         super(TestWindow, self).__init__(parent)
-        self.setWindowTitle('mayaqt test')
+        self.setWindowTitle('test_winidow')
         self.setWindowFlags(QtCore.Qt.Window|QtCore.Qt.WindowCloseButtonHint)
         lo = QtWidgets.QVBoxLayout()
-        lo.setContentsMargins(0,0,0,0)
+        lo.setContentsMargins(2,2,2,2)
         lo.setSpacing(2)
         self.setLayout(lo)
+        self.resize(300, 400)
             
         for iconname in icons:
             icon = qtawesome.icon('fa5.{}'.format(iconname), color='lightgray')
