@@ -4,13 +4,15 @@ from os.path import splitext
 from os.path import exists
 from setuptools import setup
 from setuptools import find_packages
+
 def _requires_from_file(filename):
     if not exists(filename):
         return []
-ECHO is off.
+    
     return open(filename).read().splitlines()
+
 setup(
-    name='mayaqt',
+    name='mayapy_package_utilities',
     version='0.1.0',
     package_dir={"": "python"},
     packages=find_packages("python"),
