@@ -3,3 +3,4 @@ qtpy == 1.9.0
 qtawesome == 0.7.1
 cud_colors @ git+https://github.com/kissiy179/cud_colors.git
 maya_reloadable_menu @ git+https://github.com/kissiy179/maya_reloadable_menu.git
+maya_pyside_components @ https://github.com/kissiy179/maya_pyside_components.git
