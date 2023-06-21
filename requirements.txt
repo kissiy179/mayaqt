@@ -1,4 +1,5 @@
 Qt.py
+qtpy == 1.11.3
 qtawesome == 0.7.2
 cud_colors @ git+https://github.com/kissiy179/cud_colors.git
 maya_reloadable_menu @ git+https://github.com/kissiy179/maya_reloadable_menu.git
